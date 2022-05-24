@@ -60,7 +60,7 @@ colcon build
 13. You can now source your workspace to make use of the packages you just built. In terminal, run:
 source install/setup.sh (it might also be setup.bash). 
 14. You can also add it to your ~/.bashrc file so that you do not need to source it every time.
-15. Run ros2 run husky_base
+15. Run ros2 launch husky_base base.launch.py (Do not use ros2 run husky_bringup install)
 16. Your COMM light will turns to green. You may find that your joystick can still not control your Husky robot. That issue may come to the following files:
 
 ~/dev_ws/src/husky/husky_control/config$ sudo nano teleop_logitech.yaml 
